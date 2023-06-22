@@ -14,9 +14,9 @@ $("input[type='submit']").click(function (e) {
     $(".box:nth-child(2)").removeClass("hidden");
     $("#value").text(value);
   } else {
-    $(".number").css("border", "1px solid red");
+    $(".box").addClass("shake-animation");
     setTimeout(function () {
-      $(".number").css("border", "none");
+      $(".box").removeClass("shake-animation");
     }, 1000);
   }
 });
