@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class="star"></div>
+    <h1 class="first-title">How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to
+      help us improve our offering!</p>
+    <div class="numbers">
+      <input class="number" type="button" value="1">
+      <input class="number" type="button" value="2">
+      <input class="number" type="button" value="3">
+      <input class="number" type="button" value="4">
+      <input class="number" type="button" value="5">
+    </div>
+    <input type="submit" value="Submit">
+  </div>
+
+  <div class="box hidden">
+    <div class="image-container">
+      <img src="images/illustration-thank-you.svg" alt="header image">
+    </div>
+    <p class="selected-text">You selected <span id="value"></span> out of 5</p>
+    <h1 class="second-title">Thank you !</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch !</p>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">M4XAW</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

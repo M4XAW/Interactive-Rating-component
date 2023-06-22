@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 350px;
+  width: 340px;
+  background-color: hsl(214, 13%, 11%);
+  border-radius: 2rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.box:nth-child(2) {
+  text-align: center;
+}
+
+.star {
+  height: 50px;
+  width: 50px;
+  background-color: hsl(210, 19%, 18%);
+  background-image: url(images/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35%;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.first-title,
+.second-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.first-title {
+  margin: 1.5rem 0 1rem 0;
+}
+
+/* .second-title {
+  padding-top: 2rem;
+} */
+
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 0.93rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+  user-select: none;
+}
+
+.number {
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(210, 19%, 18%);
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.number:hover:not(.selected) {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px 0;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.selected {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+}
+
+.hidden {
+  display: none;
+}
+
+.image-container {
+  height: 100px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.selected-text {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(210, 19%, 18%);
+  padding: 0.4rem 1rem;
+  margin: 1rem auto;
+  border-radius: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
