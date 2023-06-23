@@ -20,8 +20,9 @@ body {
   justify-content: space-between;
   flex-direction: column;
   height: 350px;
-  width: 340px;
-  background-color: hsl(214, 13%, 11%);
+  max-width: 340px;
+  /* background-color: hsl(214, 13%, 11%); */
+  background: radial-gradient(hsl(214, 13%, 11%), hsl(210, 18%, 15%));
   border-radius: 2rem;
   padding: 2rem;
   transition: all 0.3s ease;

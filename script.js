@@ -15,8 +15,9 @@ $("input[type='submit']").click(function (e) {
     $("#value").text(value);
   } else {
     $(".box").addClass("shake-animation");
-    setTimeout(function () {
+
+    $(".box").on("animationend", function () {
       $(".box").removeClass("shake-animation");
-    }, 1000);
+    });
   }
 });
